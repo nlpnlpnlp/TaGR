@@ -14,7 +14,7 @@ Install packages: pip install -r requirements.txt
 
 ## Running example
 ### Cora Dataset
-'''
+~~~
 data_type=cora
 graph_backbone=GAT
 log_dir=./logging/$data_type/$graph_backbone/
@@ -29,7 +29,7 @@ python -u main_tagr.py --max_len 512 --embedding_dim 100 --hidden_dim 128 \
         --cls_lambda 1.0 \
         --sparsity_lambda 1.0 \
         --continuity_lambda 1.0  > $log_dir/cmd.log	
-'''
+~~~
 
 **_Notes_**: "--sparsity_percentage 0." means "$s=0.5$" in Sect. 4.2 (But the actual sparsity is different from $s$. When you change the random seed, you need to adjust the "sparsity_percentage" according to the actual sparsity on the test set.). "--sparsity_lambda 1.0 --continuity_lambda 1.0 " means $\lambda_1=1.0, \lambda_2=1.0$. " 
 "--epochs 600" means we run 600 epochs and take the results when the "dev_acc" is best.
