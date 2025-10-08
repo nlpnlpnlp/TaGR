@@ -56,7 +56,7 @@ The line "test_acc: mean=0.8836, std=0.0268" and "test_rat_f1: mean=0.6607, std=
 If you want to conduct experiments using TAPE as the baseline, you first need to obtain the TAPE-pretrained embeddings (located in the data folder).
 Then, you should run the following script:
 ~~~
-python enhanced.py --dataset cora
+python enhanced.py --data_type cora
 ~~~
 
 ## Dependencies
@@ -64,14 +64,3 @@ python enhanced.py --dataset cora
 - matplotlib==3.7.5
 - numpy==1.26.3
 - pandas==2.0.3
-
-
-
-
-
-
-
-
-
-
-
