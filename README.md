@@ -32,7 +32,7 @@ python -u main_tagr.py --max_len 512 --embedding_dim 100 --hidden_dim 128 \
         --continuity_lambda 1.0  > $log_dir/cmd.log	
 ~~~
 
-**_Notes_**: "--sparsity_percentage 0." means "$s=0.5$" in Sect. 4.2 (But the actual sparsity is different from $s$. When you change the random seed, you need to adjust the "sparsity_percentage" according to the actual sparsity on the test set.). "--sparsity_lambda 1.0 --continuity_lambda 1.0 " means $\lambda_1=1.0, \lambda_2=1.0$. " 
+**_Notes_**: "--sparsity_percentage 0." means "$s=0.5$" in Sect. 4.2 (But the actual sparsity is different from $s$. When you change the random seed, you need to adjust the "sparsity_percentage" according to the actual sparsity on the test set.). "--sparsity_lambda 1.0 --continuity_lambda 1.0 " means $\lambda_1=1.0, \lambda_2=1.0$.  
 "--epochs 600" means we run 600 epochs and take the results when the "dev_acc" is best.
 
 ## Result  
@@ -40,13 +40,13 @@ You will obtain the result in the Cora folder located under the $log_dir directo
 
 For Cora dataset, you may get a result like: 
 ~~~
-vali_s: mean=0.5443, std=0.2195
-vali_acc: mean=0.8641, std=0.0140
-vali_rat_p: mean=0.5250, std=0.1090
-vali_rat_r: mean=0.6676, std=0.3852
-vali_rat_f1: mean=0.5673, std=0.2436
+vali_s: mean=0.5746, std=0.0164
+vali_acc: mean=0.8864, std=0.0115
+vali_rat_p: mean=0.5517, std=0.0067
+vali_rat_r: mean=0.7994, std=0.0196
+vali_rat_f1: mean=0.6527, std=0.0065
 
-test_s: mean=0.5786, std=0.2219
+test_s: mean=0.5786, std=0.0200
 test_acc: mean=0.8836, std=0.0268
 test_rat_p: mean=0.5627, std=0.0048
 test_rat_r: mean=0.8005, std=0.0230
@@ -62,6 +62,7 @@ The line "test_acc: mean=0.8836, std=0.0268" and "test_rat_f1: mean=0.6607, std=
 - matplotlib==3.7.5
 - numpy==1.26.3
 - pandas==2.0.3
+
 
 
 
