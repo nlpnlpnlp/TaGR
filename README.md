@@ -15,6 +15,7 @@ Install packages: pip install -r requirements.txt
 
 ## Running example
 ### Cora Dataset
+For example, on the Cora dataset with GAT as the backbone model, you need to run the following script:
 ~~~
 data_type=cora
 graph_backbone=GAT
@@ -31,7 +32,6 @@ python -u main_tagr.py --max_len 512 --embedding_dim 100 --hidden_dim 128 \
         --sparsity_lambda 1.0 \
         --continuity_lambda 1.0  > $log_dir/cmd.log	
 ~~~
-
 **_Notes_**: "--sparsity_percentage 0.5" means "$s$=0.5" in Sect. 4.2 (But the actual sparsity is different from $s$. When you change the random seed, you need to adjust the "sparsity_percentage" according to the actual sparsity on the test set). "--sparsity_lambda 1.0 --continuity_lambda 1.0 " means $\lambda_1=1.0, \lambda_2=1.0$. "--epochs 600" means we run 600 epochs and take the results when the "dev_acc" is best.
 
 ## Result  
@@ -51,14 +51,20 @@ test_rat_p: mean=0.5627, std=0.0048
 test_rat_r: mean=0.8005, std=0.0230
 test_rat_f1: mean=0.6607, std=0.0056
 ~~~
-
 The line "test_acc: mean=0.8836, std=0.0268" and "test_rat_f1: mean=0.6607, std=0.0056"  indicate that the classification Accuracy and  rationale F1 score are 0.8836 and 0.6607, respectively. Therefore, you can obtain the classification accuracy and rationale F1 score on a percentage scale: 88.36% and 66.07%, respectively.
+
+If you want to conduct experiments using TAPE as the baseline, you first need to obtain the TAPE-pretrained embeddings (located in the data folder).
+Then, you should run the following script:
+~~~
+python enhanced.py --dataset cora
+~~~
 
 ## Dependencies
 - torch==1.12.1
 - matplotlib==3.7.5
 - numpy==1.26.3
 - pandas==2.0.3
+
 
 
 
