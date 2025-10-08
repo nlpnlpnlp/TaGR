@@ -1,3 +1,4 @@
+#!/bin/bash
 
 data_type='cora'
 max_len=512
