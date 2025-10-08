@@ -5,7 +5,7 @@ We provide two types of feature representations here, which you can either downl
 
 ### GloVe embeddings
 
-For the GloVe embeddings, you can use the 100-dimensional pretrained GloVe vectors as the word embeddings for node texts.
+For the GloVe embeddings, you can use the 100-dimensional pretrained GloVe vectors as the word embeddings for node features.
 
 ### DeBERTa4TaG embeddings
 
