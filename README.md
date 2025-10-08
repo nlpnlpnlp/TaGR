@@ -8,7 +8,7 @@ Ubuntu 22.04.4 LTS; NVIDIA RTX6000 Ada; CUDA 12.1; python 3.8.
 
 We suggest you to create a virtual environment with: conda create -n TaGR python=3.8.20
 
-Then activate the environment with: conda activate PORAT 
+Then activate the environment with: conda activate TaGR 
 
 Install packages: pip install -r requirements.txt
 
