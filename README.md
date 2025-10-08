@@ -32,7 +32,7 @@ python -u main_tagr.py --max_len 512 --embedding_dim 100 --hidden_dim 128 \
         --continuity_lambda 1.0  > $log_dir/cmd.log	
 ~~~
 
-**_Notes_**: "--sparsity_percentage 0.5" means "$s$=0.5" in Sect. 4.2 (But the actual sparsity is different from $s$. When you change the random seed, you need to adjust the "sparsity_percentage" according to the actual sparsity on the test set.). "--sparsity_lambda 1.0 --continuity_lambda 1.0 " means $\lambda_1=1.0, \lambda_2=1.0$.  
+**_Notes_**: "--sparsity_percentage 0.5" means "$s$=0.5" in Sect. 4.2 (But the actual sparsity is different from $s$. When you change the random seed, you need to adjust the "sparsity_percentage" according to the actual sparsity on the test set). "--sparsity_lambda 1.0 --continuity_lambda 1.0 " means $\lambda_1=1.0, \lambda_2=1.0$.  
 "--epochs 600" means we run 600 epochs and take the results when the "dev_acc" is best.
 
 ## Result  
@@ -61,6 +61,7 @@ The line "test_acc: mean=0.8836, std=0.0268" and "test_rat_f1: mean=0.6607, std=
 - matplotlib==3.7.5
 - numpy==1.26.3
 - pandas==2.0.3
+
 
 
 
