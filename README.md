@@ -2,6 +2,7 @@
 
 This repository contains code for the paper "Rationalizing Text-attributed Graph Representation Learning". 
 We release some key code and hyperparameters in experiments. We will release all the code used in experiments upon acceptance.
+This work has been submitted to The Web Conference 2026 for possible publication.
 
 ## Environments
 Ubuntu 22.04.4 LTS; NVIDIA RTX6000 Ada; CUDA 12.1; python 3.8.
@@ -61,4 +62,5 @@ The line "test_acc: mean=0.8836, std=0.0268" and "test_rat_f1: mean=0.6607, std=
 - matplotlib==3.7.5
 - numpy==1.26.3
 - pandas==2.0.3
+
 
