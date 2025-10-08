@@ -4,7 +4,7 @@ This repository contains code for the paper "Rationalizing Text-attributed Graph
 We release some key code and hyperparameters in experiments. We will release all the code used in experiments upon acceptance.
 
 ## Environments
-&emsp;&emsp;  Ubuntu 22.04.4 LTS; NVIDIA RTX6000 Ada; CUDA 12.1; python 3.8.
+Ubuntu 22.04.4 LTS; NVIDIA RTX6000 Ada; CUDA 12.1; python 3.8.
 
 We suggest you to create a virtual environment with: conda create -n TaGR python=3.8.20
 
