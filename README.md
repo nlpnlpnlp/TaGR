@@ -38,7 +38,7 @@ python -u main_tagr.py --max_len 512 --embedding_dim 100 --hidden_dim 128 \
 You will obtain the result in the Cora folder located under the $log_dir directory. Then, you need to locate the result within the corresponding log file.
 
 For Cora dataset, you may get a result like: 
-
+~~~
 vali_acc: mean=0.8641, std=0.0140
 vali_rat_p: mean=0.5250, std=0.1090
 vali_rat_r: mean=0.6676, std=0.3852
@@ -49,7 +49,7 @@ test_rat_p: mean=0.5627, std=0.0048
 test_rat_r: mean=0.8005, std=0.0230
 test_rat_f1: mean=0.6607, std=0.0056
 test_s: mean=0.5786, std=0.2219
-
+~~~
 
 The line "test_acc: mean=0.8836, std=0.0268" and "test_rat_f1: mean=0.6607, std=0.0056"  indicate that the classification Accuracy and  rationale F1 score (%) are 88.36 and 66.07, respectively.
 
