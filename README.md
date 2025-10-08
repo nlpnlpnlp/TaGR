@@ -51,7 +51,6 @@ test_acc: mean=0.8836, std=0.0268
 test_rat_p: mean=0.5627, std=0.0048
 test_rat_r: mean=0.8005, std=0.0230
 test_rat_f1: mean=0.6607, std=0.0056
-
 ~~~
 
 The line "test_acc: mean=0.8836, std=0.0268" and "test_rat_f1: mean=0.6607, std=0.0056"  indicate that the classification Accuracy and  rationale F1 score (%) are 88.36 and 66.07, respectively.
@@ -62,6 +61,7 @@ The line "test_acc: mean=0.8836, std=0.0268" and "test_rat_f1: mean=0.6607, std=
 - matplotlib==3.7.5
 - numpy==1.26.3
 - pandas==2.0.3
+
 
 
 
