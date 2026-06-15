@@ -1,4 +1,4 @@
-# 🧩 TaGR
+# 🧩 Towards Trustworthy Graph-Text Learning: Cooperative Rationalization with Causal Self-Distillation
 
 [![Paper Status](https://img.shields.io/badge/Status-TMM--2026--Submission-orange)](https://github.com/)
 [![Python](https://img.shields.io/badge/Python-3.8.0-blue)](https://www.python.org/)
